@@ -62,8 +62,8 @@ export default function BooksList() {
     };
   
     const deleteAllBooks = () => {
-       const url = "http://localhost:5000";
-    //  const url = "https://mern-test-gamma.vercel.app"
+       //const url = "http://localhost:5000";
+     const url = "https://mern-test-gamma.vercel.app"
       axios.delete(url)
         .then((response) => {
         setBookList([]);
